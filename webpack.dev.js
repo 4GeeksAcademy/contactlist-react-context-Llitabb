@@ -21,8 +21,8 @@ module.exports = merge(common, {
     mode: 'development',
     devtool: 'cheap-module-source-map',
     devServer: {
-        port,
-        hot: true,
+      port: 3000,
+      host: "127.0.0.1",
         allowedHosts: "all",
         historyApiFallback: true,
         static: {
